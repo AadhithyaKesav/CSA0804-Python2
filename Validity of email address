@@ -1,0 +1,11 @@
+a=input("Enter Email address: ")
+e=["gmail.com","yahoo.com","hotmail.com"]
+j=a.split("@")
+j.pop(0)
+print(j)
+for i in j:
+    if "@" in a and i in e:
+        print("Valid")
+        break
+    else:
+        print("Invalid")
