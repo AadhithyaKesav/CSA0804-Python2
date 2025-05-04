@@ -1,0 +1,4 @@
+a=input("Enter a string: ")
+b=input("Enter substring: ")
+i=a.find(b)
+print("Substring found in index: ",i)
