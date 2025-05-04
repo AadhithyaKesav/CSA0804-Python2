@@ -1,0 +1,25 @@
+def secondMaxWord(words):
+    n = len(words)
+    fMax, sMax = 0, 0
+    sWord = ""
+
+    for i in range(n):
+        cnt = 0
+        for j in range(n):
+            if words[i] == words[j]:
+                cnt += 1
+
+        # Track most and second most repeated words
+        if cnt > fMax:
+            sMax = fMax
+            sWord = words[i]
+            fMax = cnt
+        elif cnt > sMax and cnt < fMax:
+            sMax = cnt
+            sWord = words[i]
+
+    return sWord
+
+a= input("Enter words: ")
+words=a.split()
+print(secondMaxWord(words),"Is the second max occuring word.")
