@@ -1,0 +1,15 @@
+a=input("Enter a word:")
+b=input("Enter another word: ")
+c=0
+if len(a)==len(b):
+    for i in a:
+        if i in b:
+            c+=1
+            continue
+        else:
+            print("Not anagram")
+    if len(a)==c:
+        print("Anagram")
+
+else:
+    print("Not anagram")
