@@ -1,0 +1,3 @@
+a=input("Enter a string: ")
+for i in a:
+    print(i,"occured",a.count(i),"time(s).")
