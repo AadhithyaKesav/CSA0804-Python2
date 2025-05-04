@@ -1,0 +1,5 @@
+a=input("Enter a line: ")
+b=input("Enter the word u want to remove: ")
+c=input("Enter the word u want to replace:  ")
+new=a.replace(b,c)
+print(new)
