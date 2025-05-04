@@ -1,0 +1,7 @@
+a=input("Enter a string: ")
+b=input("Enter another string: ")
+c=list(a)
+for i in c:
+    if i in b:
+        c.remove(i)
+        print(i,"Occurs in",a,"and",b)
